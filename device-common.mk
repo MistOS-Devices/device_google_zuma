@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
 
 # Set system properties identifying the chipset
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Google
+TARGET_VENDOR_PROP += device/google/zuma/system.prop
 TARGET_VENDOR_PROP += device/google/zuma/vendor.prop
 
 PRODUCT_PRODUCT_PROPERTIES += \
