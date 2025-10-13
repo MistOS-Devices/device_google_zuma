@@ -311,6 +311,7 @@ PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 
 # Init files
 PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel \
 	device/google/zuma/conf/init.zuma.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.zuma.usb.rc \
 	device/google/zuma/conf/ueventd.zuma.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
 
@@ -754,7 +755,7 @@ CBD_USE_V2 := true
 CBD_PROTOCOL_SIT := true
 
 # setup dalvik vm configs.
-$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-12288-dalvik-heap.mk)
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
